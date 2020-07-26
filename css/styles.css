@@ -10,6 +10,18 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 5rem;
 }
+/********************************* FUENTES Y VARIABLES **********************************/
+:root{
+
+    --fuentePrincipal: 'Nunito Sans', sans-serif;
+    --fuentesSecundaria: 'Sarabun' , sans-serif;
+
+    --colorUno: #e0d69b;
+    --colorDos: #d5803d;
+    --colorTres: #df2d24;
+    --colorCuatro: #b49b5b;
+    --colorCinco: #456e13;
+}
 
 /********************************* GLOBALES *********************************************/
 .contenedor {
@@ -34,4 +46,21 @@ h4{
 }
 img{
     max-width: 100%;
+}
+
+/************************************************* HEADER ****************************************************/
+.site-header {
+    height: 500px;
+    background-color: var(--colorUno);   
+}
+
+.logotipo img {
+    max-width: 200px;
+
+}
+
+.barra a{
+    display: flex;
+    justify-content: first baseline;
+    font-size: 2rem;
 }
