@@ -1,6 +1,7 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
     box-sizing: border-box;
+    font-size: 62.5%; /*Reset para REMS - 62.5% = 10px de 16px*/
   }
   *, *:before, *:after {
     box-sizing: inherit;
@@ -8,13 +9,15 @@ html {
 
 body {
     font-family: 'Nunito Sans', sans-serif;
-    font-size: 5rem;
+    /* font-size: 5rem; */
 }
 /********************************* FUENTES Y VARIABLES **********************************/
 :root{
 
     --fuentePrincipal: 'Nunito Sans', sans-serif;
-    --fuentesSecundaria: 'Sarabun' , sans-serif;
+    --fuenteSecundaria: 'Sarabun' , sans-serif;
+    --fuenteTerciaria: 'Dancing Script', cursive;
+    
 
     --colorUno: #e0d69b;
     --colorDos: #d5803d;
@@ -44,23 +47,79 @@ h3{
 h4{
     font-size: 2.8rem;
 }
+p {
+    font-size: 1.6rem;
+}
+a {
+    font-size: 1.6rem;
+}
 img{
     max-width: 100%;
 }
 
 /************************************************* HEADER ****************************************************/
 .site-header {
-    height: 500px;
-    background-color: var(--colorUno);   
+    /* height: 500px; */
+    background-image: url(/img/imagen-fresacayendo.jpg);
+    background-position: center center;
+    background-size: 280vh;
+    background-repeat: no-repeat;  
 }
 
 .logotipo img {
-    max-width: 200px;
+    max-width: 30rem;
 
 }
-
-.barra a{
+.barra {
     display: flex;
-    justify-content: first baseline;
-    font-size: 2rem;
+}
+.logotipo p {
+    display: inline-block;
+    
+}
+/* .logotipo {
+    display: flex;
+} */
+.logotipo p{
+    font-family: var(--fuenteTerciaria);
+    font-size: 4.3rem;
+    color: #363636;
+    font-weight: lighter;
+}
+
+.navegacion {
+    display: flex;
+}
+.navegacion a {
+    font-family: var(--fuentePrincipal);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.8rem;
+    background-color: white;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+.navegacion a:hover {
+    background-color: var(--colorUno);
+    color: white;
+
+}
+.links{
+    display:flex;
+    flex-direction: row-reverse;
+}
+.links a{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 5px;
+    text-decoration: none;
+
+}
+.links a i {
+    margin: 2rem;
+    font-size: 5rem;
+    color: black;
+    padding: 1rem;
 }
