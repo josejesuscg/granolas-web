@@ -72,21 +72,17 @@ img{
 }
 .barra {
     display: flex;
+    max-width: 80%;
+    margin: 0;
 }
 .logotipo p {
     display: inline-block;
-    
-}
-/* .logotipo {
-    display: flex;
-} */
-.logotipo p{
     font-family: var(--fuenteTerciaria);
     font-size: 4.3rem;
     color: #363636;
     font-weight: lighter;
 }
-
+/************************************** NAVEGACION ************************************************/
 .navegacion {
     display: flex;
 }
@@ -104,22 +100,9 @@ img{
 .navegacion a:hover {
     background-color: var(--colorUno);
     color: white;
-
 }
-.links{
-    display:flex;
-    flex-direction: row-reverse;
-}
-.links a{
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 5px;
-    text-decoration: none;
-
-}
-.links a i {
-    margin: 2rem;
-    font-size: 5rem;
-    color: black;
-    padding: 1rem;
+/*********************************** CONTENIDO PRINCIPAL *******************************************/
+.contenido-principal {
+    margin: 0 auto;
+    padding-left: 0em;
 }
