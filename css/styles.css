@@ -93,7 +93,8 @@ img{
     text-decoration: none;
     padding: 1rem;
     font-size: 1.8rem;
-    background-color: white;
+    background-color: whitesmoke;
+    border-radius: .2rem;
     color: black;
     transition: 0.3s ease-in-out;
 }
@@ -103,6 +104,28 @@ img{
 }
 /*********************************** CONTENIDO PRINCIPAL *******************************************/
 .contenido-principal {
-    margin: 0 auto;
-    padding-left: 0em;
+}
+.titulo {
+    padding: 20px;
+    background-image: url(/img/imagen-yogurt.jpg);
+    background-position: center right;
+    background-repeat: space;
+    height: 480px;
+
+}
+.titulo h1 {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20rem;
+    margin-top: 0;
+    color: var(--colorDos);
+    font-size: 8rem;
+    font-family: var(--fuenteTerciaria);
+}
+.titulo p {
+    font-size: 5.5rem;
+    font-family: var(--fuenteSecundaria);
+    text-align: end;
+    font-weight: lighter;
+    color: #363636;
 }
